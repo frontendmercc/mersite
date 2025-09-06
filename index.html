@@ -2,98 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mercedes Custodio | Cloud & AI things</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FrontendMercc – Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
-  <header>
-    <h1>Mercedes Custodio</h1>
+  <header class="navbar">
+    <div class="logo">FrontendMercc</div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#research">AI Research</a>
-      <a href="#blog">Articles</a>
-      <a href="#contact">Contact</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </nav>
   </header>
 
-  <section class="hero reveal fade-up"> 
-    <h2>Senior Cloud Architect & AI Researcher</h2>
-    <p>Driving innovation, optimization, and growth in the cloud with a focus on AI, Azure, and digital transformation across LATAM.</p>
-    <a href="#contact">Let's Work Together</a>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Mercc.<br/><span>A Frontend Developer</span></h1>
+      <p>I create fast, modern, and accessible web experiences.</p>
+      <a href="#projects" class="cta">View Projects ↓</a>
+    </div>
   </section>
 
-  <section id="about" class="reveal fade-left">
-    <h3>About Me</h3>
-    <p>From managing data centers to leading digital transformation across Latin America. Specialist in Azure, FinOps, AI strategy, and enterprise cloud adoption. A tech leader with passion for innovation and automation.</p>
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>I’m a creative developer focused on clean UI, performance, and beautiful interactions. I bring ideas to life with code.</p>
   </section>
 
-  <section id="services">
-    <h3>Services</h3>
-    <div class="services-grid">
-      <div class="service-box">
-        <h4>Cloud Architecture</h4>
-        <p>Designing resilient, scalable cloud solutions on Microsoft Azure.</p>
+  <section id="projects" class="section fade-in">
+    <h2>Selected Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Personal site built with HTML, CSS, and JavaScript – inspired by modern portfolios.</p>
       </div>
-      <div class="service-box">
-        <h4>FinOps & Governance</h4>
-        <p>Cost optimization and cloud governance frameworks.</p>
-      </div>
-      <div class="service-box">
-        <h4>Digital Transformation</h4>
-        <p>App modernization, process automation, and AI integration.</p>
-      </div>
-      <div class="service-box">
-        <h4>AI Solutions</h4>
-        <p>Building responsible, enterprise-ready AI models and workflows.</p>
+      <div class="project-card">
+        <h3>Interactive Dashboard</h3>
+        <p>A React-based dashboard with API integration and animations.</p>
       </div>
     </div>
   </section>
 
-  <section id="research">
-    <h3>AI Research & Thought Leadership</h3>
-    <p>I focus on enterprise AI use cases, FinOps with machine learning, and responsible AI deployment in LATAM markets.</p>
-    <ul>
-      <li><strong>🔬 Project:</strong> AI for cost forecasting in multi-cloud environments</li>
-      <li><strong>📄 Publication:</strong> <a href="#">LLMs for Strategic Finance: Insights from Azure OpenAI</a></li>
-      <li><strong>🎤 Talk:</strong> AI for Business Transformation – Azure LATAM Summit 2024</li>
-    </ul>
-  </section>
-
-  <section id="blog"> 
-    <h3>Articles & Insights</h3>
-    <div class="services-grid">
-      <div class="service-box">
-        <h4>FinOps Powered by AI</h4>
-        <p>How artificial intelligence enhances financial optimization in cloud operations.</p>
-        <a href="#">Read More</a>
-      </div>
-      <div class="service-box">
-        <h4>Using LLMs in Azure</h4>
-        <p>Deploying GPT models to power predictive insights for enterprise apps.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h3>Contact</h3>
-    <p>If you’d like to collaborate, reach out via <a href="mailto:aboutthings@gmail.com" style="color: var(--highlight)">email</a> or connect on <a href="https://www.linkedin.com/in/mercedesyonisacustodio/" style="color: var(--highlight)">LinkedIn</a>.</p>
+  <section id="contact" class="section fade-in">
+    <h2>Contact</h2>
+    <p>Let’s build something amazing.</p>
+    <a href="mailto:youremail@example.com" class="cta">Say Hello</a>
   </section>
 
   <footer>
-    &copy; 2025 Mercedes Custodio. AboutThings All rights reserved.
+    <p>© 2025 FrontendMercc. Built with ❤️</p>
   </footer>
 
-  <!-- Google Translate + Custom JS -->
-  <div id="google_translate_element" style="display:none;"></div>
-  <button class="translate-btn" onclick="toggleTranslate()">🌐 Translate</button>
-
   <script src="script.js"></script>
-
 </body>
 </html>
