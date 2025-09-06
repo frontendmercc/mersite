@@ -1,3 +1,4 @@
+
 function toggleTranslate() {
   if (!window.googleTranslateInitialized) {
     const gtScript = document.createElement('script');
@@ -16,3 +17,23 @@ function googleTranslateElementInit() {
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE
   }, 'google_translate_element');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const reveals = document.querySelectorAll('.reveal');
+
+  const options = {
+    threshold: 0.2,
+  };
+
+  const revealOnScroll = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, options);
+
+  reveals.forEach((el) => {
+    revealOnScroll.observe(el);
+  });
+});
