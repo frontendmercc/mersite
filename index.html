@@ -94,4 +94,162 @@
     }
 
     section h3 {
-      font-size: 2r
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--highlight);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service-box {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-box h4 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      padding: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: #111;
+      color: #aaa;
+    }
+
+    .translate-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--highlight);
+      color: #000;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mercedes Custodio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#research">AI Research</a>
+      <a href="#blog">Articles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Senior Cloud Architect & AI Strategist</h2>
+    <p>Driving innovation, optimization, and growth in the cloud with a focus on AI, Azure, and digital transformation across LATAM.</p>
+    <a href="#contact">Let's Work Together</a>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>From managing data centers to leading digital transformation across Latin America. Specialist in Azure, FinOps, AI strategy, and enterprise cloud adoption. A tech leader with passion for innovation and automation.</p>
+  </section>
+
+  <section id="services">
+    <h3>Services</h3>
+    <div class="services-grid">
+      <div class="service-box">
+        <h4>Cloud Architecture</h4>
+        <p>Designing resilient, scalable cloud solutions on Microsoft Azure.</p>
+      </div>
+      <div class="service-box">
+        <h4>FinOps & Governance</h4>
+        <p>Cost optimization and cloud governance frameworks.</p>
+      </div>
+      <div class="service-box">
+        <h4>Digital Transformation</h4>
+        <p>App modernization, process automation, and AI integration.</p>
+      </div>
+      <div class="service-box">
+        <h4>AI Solutions</h4>
+        <p>Building responsible, enterprise-ready AI models and workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <h3>AI Research & Thought Leadership</h3>
+    <p>I focus on enterprise AI use cases, FinOps with machine learning, and responsible AI deployment in LATAM markets.</p>
+    <ul>
+      <li><strong>🔬 Project:</strong> AI for cost forecasting in multi-cloud environments</li>
+      <li><strong>📄 Publication:</strong> <a href="#">LLMs for Strategic Finance: Insights from Azure OpenAI</a></li>
+      <li><strong>🎤 Talk:</strong> AI for Business Transformation – Azure LATAM Summit 2024</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h3>Articles & Insights</h3>
+    <div class="services-grid">
+      <div class="service-box">
+        <h4>FinOps Powered by AI</h4>
+        <p>How artificial intelligence enhances financial optimization in cloud operations.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="service-box">
+        <h4>Using LLMs in Azure</h4>
+        <p>Deploying GPT models to power predictive insights for enterprise apps.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>If you’d like to collaborate, reach out via <a href="mailto:your@email.com" style="color: var(--highlight)">email</a> or connect on <a href="https://linkedin.com" style="color: var(--highlight)">LinkedIn</a>.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Mercedes Custodio. All rights reserved.
+  </footer>
+
+  <!-- Google Translate Integration -->
+  <div id="google_translate_element" style="display:none;"></div>
+  <button class="translate-btn" onclick="toggleTranslate()">🌐 Translate</button>
+
+  <script type="text/javascript">
+    function toggleTranslate() {
+      if (!window.googleTranslateInitialized) {
+        var gtScript = document.createElement('script');
+        gtScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(gtScript);
+        window.googleTranslateInitialized = true;
+      } else {
+        document.getElementById('google_translate_element').style.display = 'block';
+      }
+    }
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'es,pt,fr,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+
+</body>
+</html>
