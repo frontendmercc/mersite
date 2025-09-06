@@ -156,3 +156,22 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+.books {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.book-card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .books {
+    grid-template-columns: 1fr;
+  }
+}
