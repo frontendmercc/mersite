@@ -1,39 +1,27 @@
+// Navigation Toggle
+const toggleBtn = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-function toggleTranslate() {
-  if (!window.googleTranslateInitialized) {
-    const gtScript = document.createElement('script');
-    gtScript.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    document.body.appendChild(gtScript);
-    window.googleTranslateInitialized = true;
-  } else {
-    document.getElementById('google_translate_element').style.display = 'block';
-  }
-}
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: 'es,pt,fr,en',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
+// Fade-in on scroll
+const faders = document.querySelectorAll(".fade-in");
 
-document.addEventListener('DOMContentLoaded', () => {
-  const reveals = document.querySelectorAll('.reveal');
+const appearOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -100px 0px"
+};
 
-  const options = {
-    threshold: 0.2,
-  };
-
-  const revealOnScroll = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      }
-    });
-  }, options);
-
-  reveals.forEach((el) => {
-    revealOnScroll.observe(el);
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add("appear");
+    observer.unobserve(entry.target);
   });
+}, appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
 });
