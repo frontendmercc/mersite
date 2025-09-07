@@ -314,7 +314,7 @@ footer .coffee-link:hover {
   color: #ff4b2b; /* highlight on hover */
 }
 
-.logo img {
+.navbar .logo img {
   width: 120px;
   height: auto;
   display: block;
