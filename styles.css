@@ -25,7 +25,7 @@ a {
 .navbar {
   position: sticky;
   top: 0;
-  background: rgba(10, 10, 10, 0.95);
+  background: #151f27;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -178,7 +178,7 @@ a {
 footer {
   text-align: center;
   padding: 2rem;
-  background: #111;
+  background: #151f27;
   font-size: 0.9rem;
   color: #888;
 }
