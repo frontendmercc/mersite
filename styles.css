@@ -227,4 +227,21 @@ footer .coffee-link:hover {
 .book-button:hover {
   background: #ff416c;
 }
+/* Footer Social Icons */
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
 }
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff4b2b; /* highlight on hover */
+}
+
