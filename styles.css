@@ -90,8 +90,8 @@ a {
 }
 
 .hero-title {
-  font-size: 7rem;
-  font-weight: 700;
+  font-size: 8rem;
+  font-weight: 900;
   text-transform: uppercase;
   color: #e6ff00;
   text-align: center;
@@ -105,37 +105,40 @@ a {
 
 /* Nombre completo */
 .hero-title.first {
-  animation: cycleName 10s ease-in-out infinite;
+  animation: cycleName 6s ease-in-out infinite;
 }
 
 /* Solo apellido */
 .hero-title.second {
-  animation: cycleLastName 10s ease-in-out infinite;
+  animation: cycleLastName 6s ease-in-out infinite;
 }
 
-/* Animación del nombre completo */
+/* Mercedes (ocupa más tiempo) */
 @keyframes cycleName {
-  0%, 15%   { opacity: 0; }
-  20%, 40%  { opacity: 1; }
-  45%, 100% { opacity: 0; }
+  0%   { opacity: 1; }
+  60%  { opacity: 1; }
+  65%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
-/* Animación del apellido */
+/* Custodio (solo un rato corto) */
 @keyframes cycleLastName {
-  0%, 45%   { opacity: 0; }
-  50%, 70%  { opacity: 1; }
-  75%, 100% { opacity: 0; }
+  0%   { opacity: 0; }
+  60%  { opacity: 0; }
+  65%  { opacity: 1; }
+  80%  { opacity: 1; }
+  85%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
-/* Scroll Indicator */
+/* Scroll Indicator siempre visible */
 .scroll-indicator {
   position: absolute;
   bottom: 40px;
   text-align: center;
   font-size: 0.9rem;
   color: #fff;
-  opacity: 0;
-  animation: fadeIn 2s ease 5s forwards, bounce 2s infinite 7s;
+  opacity: 1; /* siempre visible */
 }
 
 .scroll-indicator i {
@@ -143,15 +146,9 @@ a {
   margin-top: 0.3rem;
   font-size: 1.2rem;
   color: #e6ff00;
+  animation: bounce 2s infinite;
 }
 
-/* Fade in scroll after title disappears */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Bouncing arrow effect */
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
