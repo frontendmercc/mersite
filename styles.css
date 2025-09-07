@@ -91,15 +91,22 @@ a {
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-size: 8rem;              /* huge text like Steven's */
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #e6ff00;               /* neon yellow (adjust if you want) */
+  text-align: center;
+  opacity: 0;
+  animation: fadeInOut 5s ease forwards;
 }
 
 .hero-sub {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
   color: #ffdd00;
+  opacity: 0;
+  animation: fadeInOut 6s ease forwards;
+  animation-delay: 1s;      /* subtitle comes in a bit later */
 }
 
 /* Floating animation for text */
@@ -110,6 +117,43 @@ a {
 @keyframes floatText {
   0%, 100% { transform: translateY(0); opacity: 1; }
   50% { transform: translateY(-10px); opacity: 0.9; }
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(40px); }
+  20% { opacity: 1; transform: translateY(0); }
+  70% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-40px); }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 2s ease 5s forwards, bounce 2s infinite 7s;
+}
+
+.scroll-indicator i {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  color: #e6ff00;
+}
+
+/* Fade in scroll after title disappears */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Bouncing arrow effect */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 /* Sections */
