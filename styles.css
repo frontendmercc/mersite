@@ -157,21 +157,57 @@ footer {
   transform: translateY(0);
 }
 
-.books {
+.books-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
 .book-card {
   background: #1a1a1a;
-  padding: 1.5rem;
-  border-radius: 10px;
   border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .books {
-    grid-template-columns: 1fr;
-  }
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.book-tag {
+  font-size: 0.75rem;
+  color: #ff4b2b;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.book-description {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0.5rem 0 1rem;
+}
+
+.book-button {
+  display: inline-block;
+  background: #ff4b2b;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.book-button:hover {
+  background: #ff416c;
+}
 }
