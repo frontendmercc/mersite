@@ -89,22 +89,38 @@ a {
   padding: 0 1rem;
 }
 
-/* Big Name Intro */
 .hero-title {
-  font-size: 7rem;
-  font-weight: 700;
+  font-size: 6rem;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #e6ff00; /* neon yellow */
+  color: #e6ff00;
   text-align: center;
+  position: absolute;
   opacity: 0;
-  animation: fadeInOut 5s ease forwards;
 }
 
-@keyframes fadeInOut {
-  0% { opacity: 0; transform: translateY(40px); }
-  20% { opacity: 1; transform: translateY(0); }
-  70% { opacity: 1; }
+/* Animación para el primero (nombre completo) */
+.hero-title.first {
+  animation: showName 5s ease forwards;
+}
+
+@keyframes showName {
+  0%   { opacity: 0; transform: translateY(40px); }
+  20%  { opacity: 1; transform: translateY(0); }
+  70%  { opacity: 1; }
   100% { opacity: 0; transform: translateY(-40px); }
+}
+
+/* Animación para el segundo (apellido) */
+.hero-title.second {
+  animation: showLastName 5s ease forwards;
+  animation-delay: 5s; /* aparece después del primero */
+}
+
+@keyframes showLastName {
+  0%   { opacity: 0; transform: translateY(40px); }
+  20%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 1; transform: translateY(0); } /* se queda visible */
 }
 
 /* Scroll Indicator */
