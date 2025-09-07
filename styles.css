@@ -99,6 +99,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  margin-top: 2.0rem;
 }
 
 .project-card {
@@ -153,6 +154,7 @@ footer .coffee-link:hover {
 
   .projects {
     grid-template-columns: 1fr;
+    margin-top: 2.0rem;
   }
 
   .hero-text h1 {
@@ -174,7 +176,7 @@ footer .coffee-link:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  margin-top: 2.5rem;
+  margin-top: 2.0rem;
 }
 
 .book-card {
