@@ -313,3 +313,9 @@ footer .coffee-link:hover {
 .social-icons a:hover {
   color: #ff4b2b; /* highlight on hover */
 }
+
+.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
