@@ -116,6 +116,19 @@ footer {
   color: #888;
 }
 
+footer .coffee-link {
+  color: #ffdd00;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+footer .coffee-link:hover {
+  color: #ffaa00;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
