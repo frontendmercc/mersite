@@ -85,38 +85,19 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
   z-index: 1;
   padding: 0 1rem;
 }
 
+/* Big Name Intro */
 .hero-title {
-  font-size: 8rem;              /* huge text like Steven's */
+  font-size: 8rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: #e6ff00;               /* neon yellow (adjust if you want) */
+  color: #e6ff00; /* neon yellow */
   text-align: center;
   opacity: 0;
   animation: fadeInOut 5s ease forwards;
-}
-
-.hero-sub {
-  font-size: 2rem;
-  margin-top: 1rem;
-  color: #ffdd00;
-  opacity: 0;
-  animation: fadeInOut 6s ease forwards;
-  animation-delay: 1s;      /* subtitle comes in a bit later */
-}
-
-/* Floating animation for text */
-.animate-text {
-  animation: floatText 6s ease-in-out infinite;
-}
-
-@keyframes floatText {
-  0%, 100% { transform: translateY(0); opacity: 1; }
-  50% { transform: translateY(-10px); opacity: 0.9; }
 }
 
 @keyframes fadeInOut {
@@ -226,15 +207,11 @@ footer .coffee-link:hover {
   }
 
   .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .hero-sub {
-    font-size: 1.2rem;
+    font-size: 3rem;
   }
 }
 
-/* Fade-in animation */
+/* Fade-in animation for sections */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
