@@ -168,7 +168,7 @@ a {
 }
 
 .project-card {
-  background: #1a1a1a;
+  background-color: #2e3a44;
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid #333;
@@ -249,7 +249,7 @@ footer .coffee-link:hover {
 }
 
 .book-card {
-  background: #1a1a1a;
+  background-color: #2e3a44;
   border: 1px solid #333;
   border-radius: 12px;
   overflow: hidden;
