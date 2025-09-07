@@ -5,37 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mercedes Custodio – Cloud & AI things</title>
   <link rel="stylesheet" href="styles.css"/>
-  <!-- Font Awesome for social icons -->
+  <!-- Font Awesome for social + scroll arrow -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Mercedes Custodio</div>
     <nav>
       <ul class="nav-links">
-  <li><a href="#about">About</a></li>
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#books">Books</a></li>
-  <li><a href="#contact">Contact</a></li>
-    </ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
       <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </nav>
   </header>
 
+  <!-- Video Hero -->
   <section class="video-hero">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="assets/videos/hero.mp4" type="video/mp4">
-  </video>
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <div class="video-overlay">
-    <h1 class="hero-title">Mercedes Custodio</h1>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <i class="fas fa-arrow-down"></i>
+    <div class="video-overlay">
+      <!-- Big intro name -->
+      <h1 class="hero-title">Mercedes Custodio</h1>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <i class="fas fa-arrow-down"></i>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Projects -->
   <section id="projects" class="section fade-in">
     <h2>Selected Projects</h2>
     <div class="projects">
@@ -50,61 +57,62 @@
     </div>
   </section>
 
-<section id="books" class="section fade-in">
-  <h2>Books & White papers</h2>
-  <div class="books-grid">
-    
-    <!-- Book 1 -->
-    <div class="book-card">
-      <img src="assets/images/bookcover1.png" alt="Azure Bicep Book Cover" />
-      <p class="book-tag">BOOK</p>
-      <h3>Infrastructure as Code with Azure Bicep</h3>
-      <p class="book-description">
-        Learn how to build and manage cloud infrastructure using Bicep templates, DevOps tools, and automation workflows.
-      </p>
-      <a href="https://www.amazon.com/dp/B0BXYZ123" class="book-button" target="_blank">Buy on Amazon</a>
+  <!-- Books -->
+  <section id="books" class="section fade-in">
+    <h2>Books & White papers</h2>
+    <div class="books-grid">
+      <!-- Book 1 -->
+      <div class="book-card">
+        <img src="assets/images/bookcover1.png" alt="Azure Bicep Book Cover" />
+        <p class="book-tag">BOOK</p>
+        <h3>Infrastructure as Code with Azure Bicep</h3>
+        <p class="book-description">
+          Learn how to build and manage cloud infrastructure using Bicep templates, DevOps tools, and automation workflows.
+        </p>
+        <a href="https://www.amazon.com/dp/B0BXYZ123" class="book-button" target="_blank">Buy on Amazon</a>
+      </div>
+
+      <!-- Book 2 -->
+      <div class="book-card">
+        <img src="assets/images/bookcover1.png" alt="Confident Cloud Book Cover" />
+        <p class="book-tag">BOOK</p>
+        <h3>Confident Cloud</h3>
+        <p class="book-description">
+          A clear guide to understanding cloud computing fundamentals, development best practices, and career success.
+        </p>
+        <a href="https://www.amazon.com/dp/B0BXYZ456" class="book-button" target="_blank">Buy on Amazon</a>
+      </div>
     </div>
+  </section>
 
-    <!-- Book 2 -->
-    <div class="book-card">
-      <img src="assets/images/bookcover1.png" alt="Confident Cloud Book Cover" />
-      <p class="book-tag">BOOK</p>
-      <h3>Confident Cloud</h3>
-      <p class="book-description">
-        A clear guide to understanding cloud computing fundamentals, development best practices, and career success.
-      </p>
-      <a href="https://www.amazon.com/dp/B0BXYZ456" class="book-button" target="_blank">Buy on Amazon</a>
-    </div>
-
-  </div>
-</section>
-
+  <!-- Contact -->
   <section id="contact" class="section fade-in">
     <h2>Contact</h2>
     <p>Let’s build something amazing.</p>
     <a href="mailto:youremail@example.com" class="cta">Say Hello</a>
   </section>
 
+  <!-- Footer -->
   <footer>
-  <p>© 2025 Mercedes Custodio. Cloud & AI things ❤️</p>
+    <p>© 2025 Mercedes Custodio. Cloud & AI things ❤️</p>
 
-  <!-- Buy Me a Coffee link -->
-  <p>
-    <a href="https://www.buymeacoffee.com/mertechDO" target="_blank" class="coffee-link">
-      ☕ Buy me a coffee
-    </a>
-  </p>
+    <!-- Buy Me a Coffee link -->
+    <p>
+      <a href="https://www.buymeacoffee.com/mertechDO" target="_blank" class="coffee-link">
+        ☕ Buy me a coffee
+      </a>
+    </p>
 
-  <!-- Social Media Icons -->
-  <div class="social-icons">
-    <a href="https://twitter.com/YOUR_HANDLE" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com/YOUR_HANDLE" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://youtube.com/YOUR_HANDLE" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="https://linkedin.com/in/YOUR_HANDLE" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/frontendmercc" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
-  </div>
-</footer>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://twitter.com/YOUR_HANDLE" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/YOUR_HANDLE" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/YOUR_HANDLE" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://linkedin.com/in/YOUR_HANDLE" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/frontendmercc" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
