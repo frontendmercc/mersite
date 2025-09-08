@@ -177,10 +177,12 @@ header {
 
 .project-card {
   background-color: #2e3a44;
-  padding: 1.5rem;
-  border-radius: 10px;
-  border: 1px solid #333;
-  margin-top: 1.5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 footer {
@@ -256,22 +258,25 @@ footer .coffee-link:hover {
   }
 
   .podcast-media {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
 
   .podcast-buttons {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .podcast-button {
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
 
+  .spotify-embed,
+  .youtube-embed {
+    height: 200px;
+  }
 }
+
 
 
 /* Fade-in animation for sections */
@@ -480,26 +485,21 @@ footer .coffee-link:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: fff;
+  margin-bottom: 0.5rem;
 }
 
 .podcast-desc {
-  font-size: 0.95rem;
   color: #ccc;
-  margin: 1rem 0;
   line-height: 1.5;
 }
 
 .podcast-button {
   display: inline-flex;
   align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  background: #1db954;
-  color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: background 0.3s ease;
   text-decoration: none;
 }
@@ -540,6 +540,7 @@ footer .coffee-link:hover {
 .spotify-embed,
 .youtube-embed {
   width: 100%;
+  height: 180px;
   border-radius: 12px;
   border: none;
 }
