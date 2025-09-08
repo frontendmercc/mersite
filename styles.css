@@ -206,6 +206,29 @@ footer .coffee-link:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+    width: 100;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    margin: 0%;
+    padding: 0%;
+    align-self: flex-start;
+    position: relative;
+    left: 0%;
+    transform: none !important;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -222,18 +245,6 @@ footer .coffee-link:hover {
     display: flex;
   }
 
-  .nav-toggle {
-    display: block;
-    background: none;
-    color: white;
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
-    margin: 0%;
-    padding: 0%;
-    align-self: flex-start;
-  }
-
   .projects {
     grid-template-columns: 1fr;
     margin-top: 2rem;
@@ -243,13 +254,6 @@ footer .coffee-link:hover {
     font-size: 3rem;
   }
 
-  .navbar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 1rem 2rem;
-    position: relative;
-  }
 }
 
 /* Fade-in animation for sections */
