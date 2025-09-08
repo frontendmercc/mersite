@@ -476,7 +476,9 @@ footer .coffee-link:hover {
 }
 
 .podcast-button {
-  display: inline-block;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   background: #1db954;
   color: white;
   padding: 0.6rem 1.2rem;
@@ -485,6 +487,18 @@ footer .coffee-link:hover {
   font-size: 0.9rem;
   transition: background 0.3s ease;
   text-decoration: none;
+}
+
+.podcast-button.youtube {
+  background: #ff0000;
+}
+
+.podcast-button.youtube:hover {
+  background: #e60000;
+}
+
+.podcast-button i {
+  margin-right: 0.5rem;
 }
 
 .podcast-button:hover {
