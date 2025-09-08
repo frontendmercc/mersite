@@ -24,10 +24,10 @@ a {
 /* Navbar */
 .navbar {
   position: relative;
-  top: 0;
   background: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
   z-index: 1000;
 }
@@ -47,6 +47,8 @@ header {
   list-style: none;
   display: flex;
   gap: 2rem;
+  margin: 0;
+  padding: 0%;
 }
 
 .nav-toggle {
