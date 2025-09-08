@@ -259,23 +259,46 @@ footer .coffee-link:hover {
     font-size: 3rem;
   }
 
-  .podcast-media {
-    grid-template-columns: 1fr;
+  .podcast-section {
+    padding: 2rem 1rem;
   }
 
-  .podcast-buttons {
-    flex-direction: column;
-    align-items: stretch;
+  .podcast-title {
+    font-size: 1rem;
   }
 
-  .podcast-button {
+  .podcast-desc {
+    font-size: 0.85rem;
+  }
+
+  .btn-icon {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    display: inline-flex;
     justify-content: center;
-    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 12px;
+    font-size: 8px;
+    color: fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
   }
 
-  .spotify-embed,
-  .youtube-embed {
-    height: 200px;
+  .btn-icon i {
+    margin-right: 0.5rem;
+  }
+
+  .btn-icon:hover {
+    opacity: 0.9;
+  }
+
+  .podcast-links {
+    flex-wrap: flex;
+    gap: 0.5rem;
+  }
+
+  .podcast-meta {
+    padding: 1rem;
   }
 }
 
@@ -451,11 +474,10 @@ footer .coffee-link:hover {
 
 .podcast-section {
   padding: 4rem 1rem;
-  margin: 0 auto;
   max-width: 1000;
   background-color: #111a21;
   color: #fff;
-  border-top: 1px solid #222;
+  text-align: center;
 }
 
 .section-title {
@@ -474,11 +496,23 @@ footer .coffee-link:hover {
 .podcast-card {
   background: #1c262f;
   border-radius: 12px;
-  padding: 2rem;
+  overflow: hidden;
+  text-align: left;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.podcast-card:hover {
+  transform: translateY(-5px);
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  max-width: 1200px;
+  margin: 2rem auto 0;
 }
 
 .podcast-info {
@@ -494,7 +528,9 @@ footer .coffee-link:hover {
 
 .podcast-desc {
   color: #ccc;
+  font-size: 0.95rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 .podcast-button {
@@ -508,30 +544,23 @@ footer .coffee-link:hover {
   text-decoration: none;
 }
 
-.podcast-button.spotify {
-  background-color: #1DB954;
-  color: #fff;
+.spotify {
+  background: #1DB954;
 }
 
-.podcast-button.spotify:hover {
-  background-color: #17a44a;
-}
 
-.podcast-button.youtube {
-  background-color: #FF0000;
-  color: #fff;
-}
-
-.podcast-button.youtube:hover {
-  background-color: #cc0000;
+.youtube {
+  background: #FF0000;
 }
 
 .podcast-button i {
   margin-right: 0.5rem;
 }
 
-.podcast-button:hover {
-  background: #1ed760;
+.youtube-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*.podcast-audio iframe {
