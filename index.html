@@ -138,24 +138,41 @@
     <h2 class="section-title">🎙️ Featured Podcast</h2>
   
     <div class="podcast-wrapper">
-  
-      <!-- Podcast Episode -->
       <div class="podcast-card">
+        <!-- Podcast info y botones -->
         <div class="podcast-info">
           <h3 class="podcast-title">How to Stay Sharp in a Noisy World</h3>
-          <p class="podcast-desc">In this quick episode, I share 3 habits I use to stay focused and creative — even when things feel chaotic.</p>
-          <a href="https://open.spotify.com/show/your-podcast-link" target="_blank" class="podcast-button">
-            <i class="fab fa-spotify"></i> Listen on Spotify
-          </a>
-          <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" class="podcast-button youtube">
-            <i class="fab fa-youtube"></i> Watch on YouTube
-          </a>
+          <p class="podcast-desc">
+            In this quick episode, I share 3 habits I use to stay focused and creative — even when things feel chaotic.
+          </p>
+  
+          <div class="podcast-buttons">
+            <a href="https://open.spotify.com/show/your-podcast-link" target="_blank" class="podcast-button spotify">
+              <i class="fab fa-spotify"></i> Listen on Spotify
+            </a>
+            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank" class="podcast-button youtube">
+              <i class="fab fa-youtube"></i> Watch on YouTube
+            </a>
+          </div>
         </div>
-        <div class="podcast-audio">
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1A2B3C4D5E" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  
+        <!-- Embed players -->
+        <div class="podcast-media">
+          <!-- Spotify Embed -->
+          <iframe class="spotify-embed" style="border-radius:12px"
+            src="https://open.spotify.com/embed/episode/1A2B3C4D5E"
+            width="100%" height="152" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+  
+          <!-- YouTube Embed -->
+          <iframe class="youtube-embed" width="100%" height="200"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
-  
     </div>
   </section>
 

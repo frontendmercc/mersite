@@ -255,8 +255,20 @@ footer .coffee-link:hover {
     font-size: 3rem;
   }
 
-  .podcast-card {
-    grid-template-columns: 1fr;
+  .podcast-media {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .podcast-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .podcast-button {
+    width: 100%;
+    justify-content: center;
   }
 
 }
@@ -448,35 +460,38 @@ footer .coffee-link:hover {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .podcast-card {
   background: #1c262f;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  align-items: center;
-  box-shadow: 0 0 0 1px #2e3a44;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.podcast-info {
+  max-width: 600px;
 }
 
 .podcast-title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  color: fff;
 }
 
 .podcast-desc {
   font-size: 0.95rem;
   color: #ccc;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  line-height: 1.5;
 }
 
 .podcast-button {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
   background: #1db954;
@@ -484,17 +499,27 @@ footer .coffee-link:hover {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: background 0.3s ease;
   text-decoration: none;
 }
 
+.podcast-button.spotify {
+  background-color: #1DB954;
+  color: #fff;
+}
+
+.podcast-button.spotify:hover {
+  background-color: #17a44a;
+}
+
 .podcast-button.youtube {
-  background: #ff0000;
+  background-color: #FF0000;
+  color: #fff;
 }
 
 .podcast-button.youtube:hover {
-  background: #e60000;
+  background-color: #cc0000;
 }
 
 .podcast-button i {
@@ -505,9 +530,16 @@ footer .coffee-link:hover {
   background: #1ed760;
 }
 
-.podcast-audio iframe {
+/*.podcast-audio iframe {
   width: 100%;
   border: none;
   min-height: 150px;
   border-radius: 12px;
+}*/
+
+.spotify-embed,
+.youtube-embed {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
 }
