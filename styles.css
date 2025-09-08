@@ -25,11 +25,15 @@ a {
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #151f27;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 1000;
+}
+
+header {
+  background: transparent;
 }
 
 .logo {
