@@ -212,9 +212,10 @@ footer .coffee-link:hover {
     align-items: flex-start;
     padding: 1rem;
     width: 100;
+    position: relative;
   }
 
-  .nav-toggle {
+ /*.nav-toggle {
     display: block;
     background: none;
     color: white;
@@ -227,7 +228,7 @@ footer .coffee-link:hover {
     position: relative;
     left: 0%;
     transform: none !important;
-  }
+  }*/
 
   .nav-links {
     display: none;
@@ -254,6 +255,20 @@ footer .coffee-link:hover {
     font-size: 3rem;
   }
 
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  display: block;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
 }
 
 /* Fade-in animation for sections */
