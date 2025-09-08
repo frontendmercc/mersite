@@ -349,3 +349,79 @@ footer .coffee-link:hover {
   height: auto;
   display: block;
 }
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.media-card {
+  background: #2e3a44;
+  border: 1px solid #333;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+}
+
+.media-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #1b252c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-thumb iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.media-thumb.text-only {
+  background: #1b252c;
+  color: #ffdd00;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 1rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.media-info {
+  padding: 1rem 1.2rem;
+}
+
+.media-info h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.media-info p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #ffdd00;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #ffaa00;
+}

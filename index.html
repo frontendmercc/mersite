@@ -10,41 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  
-  <!-- Navbar -->
-  <!-- <header class="navbar">
-    <div class="logo"> <img src="assets/images/logo2.png" alt="logo" />
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#books">Books</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    </nav>
-  </header> -->
-
-  <!-- Video Hero -->
-  <!--<section class="video-hero">
-    <video autoplay muted loop playsinline class="bg-video">
-      <source src="assets/videos/hero.mp4" type="video/mp4">
-    </video>-->
-
-<!--<div class="video-overlay"> -->
-  <!-- Primer texto: nombre completo -->
-  <!--<h1 class="hero-title first">Mercedes</h1> -->
-  <!-- Segundo texto: solo apellido -->
-  <!--<h1 class="hero-title second">Custodio</h1> -->
-
-  <!-- Scroll indicator -->
-  <!--<div class="scroll-indicator">
-    <span>Scroll</span>
-    <i class="fas fa-arrow-down"></i>
-  </div>
-</div>
-  </section> -->
 
   <!-- Hero Section with header inside -->
 <section class="video-hero">
@@ -87,18 +52,45 @@
 
 
 
-  <!-- Projects -->
-  <section id="projects" class="section fade-in">
-    <h2>Selected Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>Personal site built with HTML, CSS, and JavaScript – inspired by modern portfolios.</p>
+  <!-- Articles contents -->
+  <section id="content" class="section fade-in">
+    <h2>Quick Content</h2>
+    <div class="media-grid">
+      
+      <!-- Video item -->
+      <div class="media-card">
+        <div class="media-thumb">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Quick Tip Video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-info">
+          <h3>How to Think Clearly Under Pressure</h3>
+          <p>A 2-minute thought to reset your mindset in high-stakes moments.</p>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Interactive Dashboard</h3>
-        <p>A React-based dashboard with API integration and animations.</p>
+  
+      <!-- Article item -->
+      <div class="media-card">
+        <div class="media-thumb text-only">
+          <span>Article</span>
+        </div>
+        <div class="media-info">
+          <h3>The Power of Listening</h3>
+          <p>Why listening deeply is more powerful than speaking loudly.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
       </div>
+  
+      <!-- Another video item -->
+      <div class="media-card">
+        <div class="media-thumb">
+          <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="Quick Insight" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-info">
+          <h3>Why Most Teams Fail</h3>
+          <p>A 90-second insight on trust, culture, and leadership.</p>
+        </div>
+      </div>
+  
     </div>
   </section>
 
