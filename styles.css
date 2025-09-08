@@ -164,9 +164,10 @@ header {
 
 /* Sections */
 .section {
-  padding: 5rem 2rem;
+  padding: 4rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .projects {
@@ -448,7 +449,9 @@ footer .coffee-link:hover {
 }
 
 .podcast-section {
-  padding: 5rem 2rem;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+  max-width: 1000;
   background-color: #111a21;
   color: #fff;
   border-top: 1px solid #222;
