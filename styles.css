@@ -226,10 +226,12 @@ footer .coffee-link:hover {
     display: block;
     background: none;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     border: none;
     cursor: pointer;
     margin: 0%;
+    padding: 0%;
+    align-self: flex-start;
   }
 
   .projects {
@@ -244,8 +246,9 @@ footer .coffee-link:hover {
   .navbar{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding: 1rem 2rem;
+    position: relative;
   }
 }
 
