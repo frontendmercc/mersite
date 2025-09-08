@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  
   <!-- Navbar -->
-  <header class="navbar">
+  <!-- <header class="navbar">
     <div class="logo"> <img src="assets/images/logo2.png" alt="logo" />
     </div>
     <nav>
@@ -23,27 +24,68 @@
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </nav>
-  </header>
+  </header> -->
 
   <!-- Video Hero -->
-  <section class="video-hero">
+  <!--<section class="video-hero">
     <video autoplay muted loop playsinline class="bg-video">
       <source src="assets/videos/hero.mp4" type="video/mp4">
-    </video>
+    </video>-->
 
-<div class="video-overlay">
+<!--<div class="video-overlay"> -->
   <!-- Primer texto: nombre completo -->
-  <h1 class="hero-title first">Mercedes</h1>
+  <!--<h1 class="hero-title first">Mercedes</h1> -->
   <!-- Segundo texto: solo apellido -->
-  <h1 class="hero-title second">Custodio</h1>
+  <!--<h1 class="hero-title second">Custodio</h1> -->
 
   <!-- Scroll indicator -->
-  <div class="scroll-indicator">
+  <!--<div class="scroll-indicator">
     <span>Scroll</span>
     <i class="fas fa-arrow-down"></i>
   </div>
 </div>
-  </section>
+  </section> -->
+
+  <!-- Hero Section with header inside -->
+<section class="video-hero">
+  <!-- VIDEO -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/videos/hero.mp4" type="video/mp4" />
+  </video>
+
+  <!-- OVERLAY -->
+  <div class="video-overlay">
+    
+    <!-- MUEVE EL HEADER AQUÍ DENTRO -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo2.png" alt="logo" />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      </nav>
+    </header>
+    <!-- FIN DEL HEADER -->
+
+    <!-- TÍTULOS ANIMADOS -->
+    <h1 class="hero-title first">Mercedes</h1>
+    <h1 class="hero-title second">Custodio</h1>
+
+    <!-- Scroll -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <i class="fas fa-arrow-down"></i>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Projects -->
   <section id="projects" class="section fade-in">
@@ -59,6 +101,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Books -->
   <section id="books" class="section fade-in">
