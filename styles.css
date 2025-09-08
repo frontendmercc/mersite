@@ -164,10 +164,11 @@ header {
 
 /* Sections */
 .section {
-  padding: 4rem 1rem;
+  padding: 4rem 0.2rem;
   max-width: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
+  border-radius: 12px;
 }
 
 .projects {
@@ -317,7 +318,7 @@ footer .coffee-link:hover {
 .book-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .book-tag {
