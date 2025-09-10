@@ -51,6 +51,19 @@ header {
   padding: 0%;
 }
 
+.nav-links li a {
+  font-size: 20px; /* Tamaño más grande */
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  transform: scale(1.15); /* Efecto "zoom" */
+  color: #FFA500; /* Naranja como color de hover */
+}
+
 .nav-toggle {
   display: none;
   background: none;
