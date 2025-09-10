@@ -285,20 +285,19 @@ footer .coffee-link:hover {
   }
 
   .btn-icon {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
     display: inline-flex;
-    justify-content: center;
-    padding: 0.5rem 0.75rem;
-    border-radius: 12px;
-    font-size: 8px;
-    color: fff;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
     text-decoration: none;
+    color: white;
     transition: background 0.3s ease;
   }
 
   .btn-icon i {
-    margin-right: 0.5rem;
+    font-size: 1rem;
   }
 
   .btn-icon:hover {
@@ -308,6 +307,7 @@ footer .coffee-link:hover {
   .podcast-links {
     flex-wrap: flex;
     gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .podcast-meta {
