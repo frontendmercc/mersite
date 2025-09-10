@@ -34,7 +34,7 @@ a {
 
 header {
   background: transparent;
-  position: relative;
+  position: sticky;
   z-index: 2;
 }
 
