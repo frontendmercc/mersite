@@ -564,15 +564,6 @@ footer .coffee-link:hover {
   opacity: 0.9;
 }
 
-.spotify {
-  background: #1DB954;
-}
-
-
-.youtube {
-  background: #FF0000;
-}
-
 .podcast-button i {
   margin-right: 1rem;
 }
