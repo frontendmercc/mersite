@@ -431,6 +431,7 @@ footer .coffee-link:hover {
 }
 
 .media-thumb {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
@@ -438,6 +439,42 @@ footer .coffee-link:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Overlay oculto por defecto */
+.media-thumb .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4 ease;
+}
+
+/* Botón dentro del overlay */
+.overlay-btn {
+  background: #00B2C9;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.overlay-btn:hover {
+  background: #0090a5;
+  transform: scale(1.05);
+}
+
+/* Mostrar overlay al hacer hover */
+.media-thumb:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .media-thumb iframe {
