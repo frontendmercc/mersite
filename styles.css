@@ -61,7 +61,7 @@ header {
 
 .nav-links li a:hover {
   transform: scale(1.15); /* Efecto "zoom" */
-  color: #FFA500; /* Naranja como color de hover */
+  color: #00B2C9; /* blue */
 }
 
 .nav-toggle {
