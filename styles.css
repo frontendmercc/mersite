@@ -23,7 +23,7 @@ a {
 
 /* Navbar */
 .navbar {
-  position: relative;
+  position: sticky;
   background: transparent;
   display: flex;
   justify-content: space-between;
