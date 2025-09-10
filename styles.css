@@ -577,6 +577,14 @@ footer .coffee-link:hover {
   margin-right: 1rem;
 }
 
+.podcast-button.spotify {
+  background-color: #1DB954;
+}
+
+.podcast-button.youtube {
+  background-color: #FF0000;
+}
+
 .youtube-thumbnail img {
   width: 100%;
   height: auto;
@@ -589,4 +597,10 @@ footer .coffee-link:hover {
   height: 180px;
   border-radius: 12px;
   border: none;
+}
+
+.podcast-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
