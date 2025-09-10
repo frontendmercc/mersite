@@ -546,34 +546,44 @@ footer .coffee-link:hover {
   margin-bottom: 1rem;
 }
 
-.podcast-button {
+.podcast-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Estilo base del icono */
+.icon-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: #fff;
-  transition: background 0.3s ease;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #222;
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, background-color 0.3s ease;
   text-decoration: none;
 }
 
-.podcast-button:hover {
-  transform: scale(1.05);
+/* Hover minimalista */
+.icon-btn:hover {
+  transform: scale(1.15);
   opacity: 0.9;
 }
 
-.podcast-button i {
-  margin-right: 1rem;
-}
-
-.podcast-button.spotify {
+/* Colores por marca (sutiles) */
+.icon-btn.spotify {
   background-color: #1DB954;
 }
 
-.podcast-button.youtube {
+.icon-btn.youtube {
   background-color: #FF0000;
+}
+
+.icon-btn.apple {
+  background-color: #a6a6a6;
 }
 
 .youtube-thumbnail img {
@@ -590,8 +600,3 @@ footer .coffee-link:hover {
   border: none;
 }
 
-.podcast-links {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
