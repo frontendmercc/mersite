@@ -487,14 +487,14 @@ footer .coffee-link:hover {
 
 .podcast-section {
   padding: 4rem 1rem;
-  max-width: 1000;
+  max-width: 1000px;
   background-color: #111a21;
   color: #fff;
   text-align: center;
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: rem;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
@@ -535,7 +535,7 @@ footer .coffee-link:hover {
 .podcast-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: fff;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
@@ -549,12 +549,19 @@ footer .coffee-link:hover {
 .podcast-button {
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  color: #fff;
   transition: background 0.3s ease;
   text-decoration: none;
+}
+
+.podcast-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .spotify {
@@ -567,7 +574,7 @@ footer .coffee-link:hover {
 }
 
 .podcast-button i {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .youtube-thumbnail img {
@@ -575,13 +582,6 @@ footer .coffee-link:hover {
   height: auto;
   display: block;
 }
-
-/*.podcast-audio iframe {
-  width: 100%;
-  border: none;
-  min-height: 150px;
-  border-radius: 12px;
-}*/
 
 .spotify-embed,
 .youtube-embed {
