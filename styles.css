@@ -203,7 +203,7 @@ header {
 
 footer {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
   background-color: #151f27;
   font-size: 0.9rem;
   color: #888;
@@ -345,65 +345,6 @@ footer .coffee-link:hover {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* Books Section 
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-*/
-
-/*.book-card {
-  background-color: #2e3a44;
-  border: 1px solid #333;
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-*/
-
-/*.book-card:hover {
-  transform: translateY(-5px);
-*/
-
-/*.book-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
-.book-tag {
-  font-size: 0.75rem;
-  color: #ff4b2b;
-  margin-top: 0.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.book-description {
-  font-size: 0.9rem;
-  color: #aaa;
-  margin: 0.5rem 0 1rem;
-}
-
-.book-button {
-  display: inline-block;
-  background: #ff4b2b;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.book-button:hover {
-  background: #ff416c;
-}
-*/
 
 .books-section {
   max-width: 1000px;
@@ -627,9 +568,9 @@ footer .coffee-link:hover {
 
 .podcast-section {
   padding: 4rem 1rem;
-  max-width: 1000px;
+ /*max-width: 1000px;
   background-color: #1c262f;
-  color: #fff;
+  color: #fff;*/
   text-align: center;
 }
 
