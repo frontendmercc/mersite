@@ -313,6 +313,21 @@ footer .coffee-link:hover {
   .podcast-meta {
     padding: 1rem;
   }
+  .book-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .book-card {
+    padding: 12px;
+  }
+
+  .book-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .book-card p {
+    font-size: 0.8rem;
+  }
 }
 
 
@@ -329,15 +344,16 @@ footer .coffee-link:hover {
   transform: translateY(0);
 }
 
-/* Books Section */
+/* Books Section 
 .books-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin-top: 1.5rem;
 }
+*/
 
-.book-card {
+/*.book-card {
   background-color: #2e3a44;
   border: 1px solid #333;
   border-radius: 12px;
@@ -346,12 +362,13 @@ footer .coffee-link:hover {
   text-align: center;
   transition: transform 0.3s ease;
 }
+*/
 
-.book-card:hover {
+/*.book-card:hover {
   transform: translateY(-5px);
-}
+*/
 
-.book-card img {
+/*.book-card img {
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -383,6 +400,85 @@ footer .coffee-link:hover {
 
 .book-button:hover {
   background: #ff416c;
+}
+*/
+
+.books-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.books-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.book-card {
+  background-color: #262C3A;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.3);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.book-type {
+  color: #00B2C9;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.book-card h3 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.book-card p {
+  font-size: 0.85rem;
+  color: #D9E2EC;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.read-more {
+  color: #00B2C9;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #58d0f4;
 }
 
 /* Footer Social Icons */
