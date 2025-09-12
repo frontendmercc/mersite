@@ -313,6 +313,7 @@ footer .coffee-link:hover {
   .podcast-meta {
     padding: 1rem;
   }
+
   .book-grid {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
@@ -535,6 +536,8 @@ footer .coffee-link:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: auto;
+  max-height: 360px;
 }
 
 /* Overlay oculto por defecto */
@@ -728,8 +731,9 @@ footer .coffee-link:hover {
 .spotify-embed,
 .youtube-embed {
   width: 100%;
-  height: 180px;
+  height: 100px;
   border-radius: 12px;
   border: none;
+  display: block;
 }
 
