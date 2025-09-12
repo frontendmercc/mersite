@@ -178,6 +178,7 @@ header {
 /* Sections */
 .section {
   padding: 4rem 0.2rem;
+  padding: 4rem;
   max-width: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -521,7 +522,9 @@ footer .coffee-link:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease;
+  min-height: 100%;
 }
 
 .media-card:hover {
@@ -534,7 +537,7 @@ footer .coffee-link:hover {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #1b252c;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   min-height: auto;
