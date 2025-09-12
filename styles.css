@@ -511,6 +511,7 @@ footer .coffee-link:hover {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  width: 1000px;
 }
 
 .media-card {
